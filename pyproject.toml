@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobtrack"
+version = "0.1.0"
+description = "A small command-line tracker for job applications"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Kevin Liu"}]
+
+[project.scripts]
+jobtrack = "jobtrack.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["jobtrack*"]
